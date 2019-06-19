@@ -9,10 +9,13 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
+    private let cellIds = ["Purple Cell", "Green Cell", "Blue Cell", "Red Cell"]
+    private var cellSize = Array(repeating: CGSize(width: 170, height: 80), count: 4)
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
     }
 
 

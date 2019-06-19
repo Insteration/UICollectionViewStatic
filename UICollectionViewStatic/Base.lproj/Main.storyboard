@@ -19,7 +19,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="jUk-3I-esn">
-                                <rect key="frame" x="20" y="44" width="280" height="490"/>
+                                <rect key="frame" x="16" y="20" width="288" height="528"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" red="0.41219149285123258" green="1" blue="0.96839469803299416" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="fx5-h5-nln">
@@ -30,7 +30,7 @@
                                 </collectionViewFlowLayout>
                                 <cells>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="Purple Cell" id="wc2-Xd-o5u">
-                                        <rect key="frame" x="55" y="0.0" width="170" height="80"/>
+                                        <rect key="frame" x="59" y="0.0" width="170" height="80"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
                                             <rect key="frame" x="0.0" y="0.0" width="170" height="80"/>
@@ -60,9 +60,10 @@
                                             <constraint firstAttribute="bottom" secondItem="4tR-7z-E3b" secondAttribute="bottom" constant="4" id="gHu-ab-ObJ"/>
                                             <constraint firstItem="4tR-7z-E3b" firstAttribute="top" secondItem="wc2-Xd-o5u" secondAttribute="top" constant="4" id="qTQ-zH-1nd"/>
                                         </constraints>
+                                        <size key="customSize" width="170" height="80"/>
                                     </collectionViewCell>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="Green Cell" id="Y5Z-9c-fwB">
-                                        <rect key="frame" x="55" y="90" width="170" height="80"/>
+                                        <rect key="frame" x="59" y="90" width="170" height="80"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
                                             <rect key="frame" x="0.0" y="0.0" width="170" height="80"/>
@@ -92,9 +93,10 @@
                                             <constraint firstAttribute="trailing" secondItem="O9i-Pb-obA" secondAttribute="trailing" constant="4" id="Mzb-9o-j43"/>
                                             <constraint firstItem="O9i-Pb-obA" firstAttribute="top" secondItem="Y5Z-9c-fwB" secondAttribute="top" constant="4" id="VUN-bD-a2o"/>
                                         </constraints>
+                                        <size key="customSize" width="170" height="80"/>
                                     </collectionViewCell>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="Blue Cell" id="SFQ-wr-r7K">
-                                        <rect key="frame" x="55" y="180" width="170" height="80"/>
+                                        <rect key="frame" x="59" y="180" width="170" height="80"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
                                             <rect key="frame" x="0.0" y="0.0" width="170" height="80"/>
@@ -124,9 +126,10 @@
                                             <constraint firstItem="wr4-rL-b4n" firstAttribute="top" secondItem="SFQ-wr-r7K" secondAttribute="top" constant="4" id="WpI-nA-8cS"/>
                                             <constraint firstItem="wr4-rL-b4n" firstAttribute="leading" secondItem="SFQ-wr-r7K" secondAttribute="leading" constant="4" id="tkd-kK-V5L"/>
                                         </constraints>
+                                        <size key="customSize" width="170" height="80"/>
                                     </collectionViewCell>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="Red Cell" id="Jtb-M5-MBI">
-                                        <rect key="frame" x="55" y="270" width="170" height="80"/>
+                                        <rect key="frame" x="59" y="270" width="170" height="80"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
                                             <rect key="frame" x="0.0" y="0.0" width="170" height="80"/>
@@ -156,6 +159,7 @@
                                             <constraint firstAttribute="bottom" secondItem="LRW-4j-koI" secondAttribute="bottom" constant="4" id="hB8-qG-2KY"/>
                                             <constraint firstAttribute="trailing" secondItem="LRW-4j-koI" secondAttribute="trailing" constant="4" id="tYe-37-Cam"/>
                                         </constraints>
+                                        <size key="customSize" width="170" height="80"/>
                                     </collectionViewCell>
                                 </cells>
                             </collectionView>
@@ -166,7 +170,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-57.971014492753625" y="97.767857142857139"/>
+            <point key="canvasLocation" x="-58.125" y="97.183098591549296"/>
         </scene>
     </scenes>
 </document>

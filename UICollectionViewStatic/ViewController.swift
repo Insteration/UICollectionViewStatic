@@ -47,10 +47,10 @@ extension ViewController: UICollectionViewDelegate {
                         CGSize(width: 170, height: 80),
                         CGSize(width: 150, height: 150)]
         } else {
-            cellSize = [CGSize(width: Int.random(in: (5...20)) * 10, height: Int.random(in: (5...20 * 10)) * 10),
-                        CGSize(width: Int.random(in: (5...20)) * 10, height: Int.random(in: (5...20 * 10)) * 10),
-                        CGSize(width: Int.random(in: (5...20)) * 10, height: Int.random(in: (5...20 * 10)) * 10),
-                        CGSize(width: Int.random(in: (5...20)) * 10, height: Int.random(in: (5...20)) * 10)]
+            cellSize = [CGSize(width: Int.random(in: 5...20) * 10, height: Int.random(in: 5...20) * 10),
+                        CGSize(width: Int.random(in: 5...20) * 10, height: Int.random(in: 5...20) * 10),
+                        CGSize(width: Int.random(in: 5...20) * 10, height: Int.random(in: 5...20) * 10),
+                        CGSize(width: Int.random(in: 5...20) * 10, height: Int.random(in: 5...20) * 10)]
         }
         
         collectionView.reloadItems(at: [indexPath])

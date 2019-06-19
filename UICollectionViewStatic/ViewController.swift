@@ -45,7 +45,7 @@ extension ViewController: UICollectionViewDelegate {
                     CGSize(width: 180, height: 100),
                     CGSize(width: 170, height: 80),
                     CGSize(width: 150, height: 150)]
-        
+        collectionView.reloadItems(at: [indexPath])
         print("We press cellID - \(cellIds[indexPath.row])")
     }
 }

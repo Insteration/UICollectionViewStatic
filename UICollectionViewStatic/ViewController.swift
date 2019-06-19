@@ -41,10 +41,15 @@ extension ViewController: UICollectionViewDelegateFlowLayout {
 extension ViewController: UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         
-        cellSize = [CGSize(width: 210, height: 60),
-                    CGSize(width: 180, height: 100),
-                    CGSize(width: 170, height: 80),
-                    CGSize(width: 150, height: 150)]
+        if indexPath.row % 2 == 0 {
+            cellSize = [CGSize(width: 210, height: 60),
+                        CGSize(width: 180, height: 100),
+                        CGSize(width: 170, height: 80),
+                        CGSize(width: 150, height: 150)]
+        } else {
+            cellSize = Array(repeating: CGSize(width: 170, height: 80), count: 4)
+        }
+        
         collectionView.reloadItems(at: [indexPath])
         print("We press cellID - \(cellIds[indexPath.row])")
     }

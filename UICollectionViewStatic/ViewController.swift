@@ -18,7 +18,6 @@ class ViewController: UIViewController {
         
     }
 
-
 }
 
 extension ViewController: UICollectionViewDelegate, UICollectionViewDataSource {
@@ -27,7 +26,7 @@ extension ViewController: UICollectionViewDelegate, UICollectionViewDataSource {
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        
+        return collectionView.dequeueReusableCell(withReuseIdentifier: cellIds[indexPath.item], for: indexPath)
     }
     
     

@@ -17,7 +17,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         
     }
-
+    
 }
 
 extension ViewController: UICollectionViewDataSource {
@@ -40,6 +40,12 @@ extension ViewController: UICollectionViewDelegateFlowLayout {
 
 extension ViewController: UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        
+        cellSize = [CGSize(width: 210, height: 60),
+                    CGSize(width: 180, height: 100),
+                    CGSize(width: 170, height: 80),
+                    CGSize(width: 150, height: 150)]
+        
         print("We press cellID - \(cellIds[indexPath.row])")
     }
 }

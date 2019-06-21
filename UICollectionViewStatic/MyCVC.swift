@@ -1,46 +1,42 @@
 //
-//  ViewController.swift
+//  MyCVC.swift
 //  UICollectionViewStatic
 //
-//  Created by Артём Кармазь on 6/19/19.
+//  Created by Артём Кармазь on 6/20/19.
 //  Copyright © 2019 Артём Кармазь. All rights reserved.
 //
 
 import UIKit
 
-class ViewController: UIViewController {
+private let reuseIdentifier = "Cell"
+
+class MyCVC: UICollectionViewController {
     
     private var cellIds = ["Purple Cell", "Green Cell", "Blue Cell", "Red Cell"]
     private var cellSize = Array(repeating: CGSize(width: 170, height: 80), count: 4)
-    
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-    }
-    
-}
 
-extension ViewController: UICollectionViewDataSource {
-    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        // Register cell classes
+        self.collectionView!.register(UICollectionViewCell.self, forCellWithReuseIdentifier: reuseIdentifier)
+
+        // Do any additional setup after loading the view.
+    }
+
+    override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return cellIds.count
     }
     
-    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+    override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         return collectionView.dequeueReusableCell(withReuseIdentifier: cellIds[indexPath.item], for: indexPath)
     }
     
-    
-}
-
-extension ViewController: UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         return cellSize[indexPath.item]
     }
-}
-
-extension ViewController: UICollectionViewDelegate {
-    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+    
+    override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         
         //        if indexPath.row % 2 == 0 {
         //            cellSize = [CGSize(width: 210, height: 60),
@@ -70,22 +66,16 @@ extension ViewController: UICollectionViewDelegate {
         collectionView.reloadItems(at: [indexPath])
         print("We press cellID - \(cellIds[indexPath.row])")
     }
-}
-
-extension ViewController {
     
-    func collectionView(_ collectionView: UICollectionView, canMoveItemAt indexPath: IndexPath) -> Bool {
+    override func collectionView(_ collectionView: UICollectionView, canMoveItemAt indexPath: IndexPath) -> Bool {
         return true
     }
     
-    func collectionView(_ collectionView: UICollectionView, moveItemAt sourceIndexPath: IndexPath, to destinationIndexPath: IndexPath) {
+    override func collectionView(_ collectionView: UICollectionView, moveItemAt sourceIndexPath: IndexPath, to destinationIndexPath: IndexPath) {
         
         let item = cellIds.remove(at: sourceIndexPath.item)
         cellIds.insert(item, at: destinationIndexPath.item)
         print("Source Index - \(sourceIndexPath)")
         print("Destination - \(destinationIndexPath)")
     }
-    
-    
-    
 }

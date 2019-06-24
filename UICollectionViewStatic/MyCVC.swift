@@ -38,6 +38,8 @@ class MyCVC: UICollectionViewController {
     
     override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         
+        
+        // Old
         //        if indexPath.row % 2 == 0 {
         //            cellSize = [CGSize(width: 210, height: 60),
         //                        CGSize(width: 180, height: 100),

@@ -55,12 +55,19 @@ class MyCVC: UICollectionViewController {
         switch indexPath.row {
         case 0:
             cellSize[0] = CGSize(width: Int.random(in: 5...20) * 10, height: Int.random(in: 5...20) * 10)
+            print("0")
+
         case 1:
             cellSize[1] = CGSize(width: Int.random(in: 5...20) * 10, height: Int.random(in: 5...20) * 10)
+            print("1")
+
         case 2:
             cellSize[2] = CGSize(width: Int.random(in: 5...20) * 10, height: Int.random(in: 5...20) * 10)
+            print("2")
+
         case 3:
             cellSize[3] = CGSize(width: Int.random(in: 5...20) * 10, height: Int.random(in: 5...20) * 10)
+            print("3")
         default:
             ()
         }
